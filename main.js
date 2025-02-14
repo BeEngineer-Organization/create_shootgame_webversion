@@ -41,27 +41,15 @@ document.addEventListener("keyup", function (e) {
 // 十字キーの左右が押されたことをきっかけに
 // プレイヤーを左右に移動させる
 function handlePlayerMovement() {
-    if (keys["ArrowLeft"] && player.x > 0) {
-        player.x -= player.speed;
-    }
-    if (keys["ArrowRight"] && player.x + player.width < canvas.width) {
-        player.x += player.speed;
-    }
+    // ＊＊＊＊＊　ここに上下左右に移動するためのコードを書く　＊＊＊＊＊
+
 }
 
 // スペースキーが押されたことをきっかけに
 // レーザーを発射する
 function shootLaser() {
-    if (keys[" "]) {
-        playerLasers.push({
-            x: player.x + player.width / 2 - 2,
-            y: player.y,
-            width: 4,
-            height: 10,
-            speed: 4,
-        });
-        keys[" "] = false;
-    }
+    // ＊＊＊＊＊　ここにレーザーを発射するためのコードを書く　＊＊＊＊＊
+
 }
 
 // 指定された座標にプレイヤーを表示する
